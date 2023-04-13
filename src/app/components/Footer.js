@@ -65,7 +65,7 @@ const rutas_direccion = [
 
 const Footer = () => {
   return (
-    <div className=' bg-[#90BE6D]p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
+    <div className=' bg-verde-bg mt-5 p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
       <div className=' xl: w-2/6 p-3'>
         <nav className='column columns-3'>
           <ul className='  font-serif font-thin  text-l p-1 '>
