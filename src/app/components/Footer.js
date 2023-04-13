@@ -1,66 +1,67 @@
-import Link from 'next/link';
-import React from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 const rutas_explora = [
   {
     ruta: '/',
-    label: 'Inicio',
+    label: 'Inicio'
   },
   {
     ruta: '/',
-    label: 'Servicios',
+    label: 'Servicios'
   },
   {
     ruta: '/',
-    label: 'Infantil',
-  },
-];
+    label: 'Infantil'
+  }
+]
 const rutas_conocenos = [
   {
     ruta: '/',
-    label: '¿Quienes somos?',
+    label: '¿Quienes somos?'
   },
   {
     ruta: '/',
-    label: 'Sucursales',
+    label: 'Sucursales'
   },
   {
     ruta: '/',
-    label: 'Contacto',
-  },
-];
+    label: 'Contacto'
+  }
+]
 
 const rutas_redes = [
   {
     ruta: 'https://www.facebook.com/Tecnilibros/?locale=es_LA',
 
-    imagen: '../../img/facebook.png',
+    imagen: '../../img/facebook.png'
   },
   {
     ruta: 'https://twitter.com/Tecnilibros',
 
-    imagen: '../../img/twitter.png',
+    imagen: '../../img/twitter.png'
   },
   {
     ruta: 'https://www.instagram.com/tecnilibros/?hl=es',
 
-    imagen: '../../img/instagram.png',
-  },
-];
+    imagen: '../../img/instagram.png'
+  }
+]
 const rutas_direccion = [
   {
     ruta: 'https://maps.app.goo.gl/B46oXopwyZjttAph6?g_st=iw',
     direccion: 'Bulevar Ramírez Méndez # 268 Fraccionamiento Bahía',
     telefono: 'Tel (646) 152 12 69',
-    correo: 'sucursaltecnilibros@yahoo.com.mx',
+    correo: 'sucursaltecnilibros@yahoo.com.mx'
   },
   {
     ruta: 'https://maps.app.goo.gl/H7QSBWx6kLsfn8jm7?g_st=iw',
     direccion: 'Av.Ruiz # 488 Entre Juarez y Cuarta. Zona Centro',
     telefono: 'Tel. (646) 178 1408',
-    correo: 'contacto@tecnilibros.com.mx',
-  },
-];
+    correo: 'contacto@tecnilibros.com.mx'
+  }
+]
 
 const Footer = () => {
   return (
@@ -72,10 +73,10 @@ const Footer = () => {
         <nav className='column columns-3'>
           <ul className='  font-serif font-thin  text-l p-1 '>
             {rutas_redes.map(({ ruta, imagen }, key) => (
-              <li className='text-center'>
+              <li key={key} className='text-center'>
                 <Link href={ruta}>
                   {' '}
-                  <img src={imagen} alt='' />
+                  <Image src={imagen} alt='imagen red social' />
                 </Link>
               </li>
             ))}
@@ -91,7 +92,7 @@ const Footer = () => {
         <nav>
           <ul className=' font-serif font-thin  text-l p-5 '>
             {rutas_explora.map(({ ruta, label }, key) => (
-              <li>
+              <li key={key}>
                 <Link href={ruta}>{label}</Link>
               </li>
             ))}
@@ -104,7 +105,7 @@ const Footer = () => {
         <nav>
           <ul className='font-serif font-thin  text-l p-5 '>
             {rutas_conocenos.map(({ ruta, label }, key) => (
-              <li>
+              <li key={key}>
                 <Link href={ruta}>{label}</Link>
               </li>
             ))}
@@ -118,7 +119,7 @@ const Footer = () => {
           <ul className='font-serif font-thin  text-l p-5 '>
             {rutas_direccion.map(
               ({ ruta, direccion, telefono, correo }, key) => (
-                <li>
+                <li key={key}>
                   <Link href={ruta}>
                     {direccion} <p>{telefono}</p> <p>{correo}</p>
                   </Link>
@@ -129,7 +130,7 @@ const Footer = () => {
         </nav>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
