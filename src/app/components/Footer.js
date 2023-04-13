@@ -66,9 +66,6 @@ const rutas_direccion = [
 const Footer = () => {
   return (
     <div className=' bg-[#90BE6D]p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
-      {/* <a href=''>
-        <img src='../img/1.png' alt='' />
-      </a>  */}
       <div className=' xl: w-2/6 p-3'>
         <nav className='column columns-3'>
           <ul className='  font-serif font-thin  text-l p-1 '>
@@ -76,7 +73,7 @@ const Footer = () => {
               <li key={key} className='text-center'>
                 <Link href={ruta}>
                   {' '}
-                  <Image src={imagen} alt='imagen red social' />
+                  <img src={imagen} alt='imagen red social' />
                 </Link>
               </li>
             ))}
