@@ -7,7 +7,7 @@ const rutas = [
         ruta: '/',
         label: "Inicio"
     },
-    /*{
+    {
         ruta: '/about',
         label: "Infantil"
     },
@@ -15,16 +15,8 @@ const rutas = [
         ruta: '/servicios',
         label: "Servicios"
     }
-    ,
-    {
-        ruta: '/',
-        label: "Quienes somos?"
-    },
-    {
-        ruta: '/',
-        label: "Contactanos"
-    }
-    */
+    
+    
 ]
 
 const Navbar = () => {

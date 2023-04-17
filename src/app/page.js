@@ -1,15 +1,12 @@
-import Navbar from "./components/Navbar"
-import Slider from "./components/Slider"
-import About from "./components/quienesSomos/About"
+import React from 'react'
+import Slider from './components/Slider'
 
-
-export default function Home() {
+const page = () => {
   return (
-    <>
-    <Navbar></Navbar>
-      <Slider />
-      <About></About>
-   
-    </>
+    <div>
+      <Slider></Slider>
+    </div>
   )
 }
+
+export default page
