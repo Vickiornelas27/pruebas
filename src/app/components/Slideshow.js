@@ -16,11 +16,9 @@ const Slideshow = () => {
 
 	//Efectos para el zoom 
 	const zoomInProperties = {
-		indicators: true,
 		scale: 1.2,
 		duration: 5000,
 		transitionDuration: 500,
-		infinite: true,
 		prevArrow: (
 			<div style={{ width: "30px", marginRight: "-30px", cursor: "pointer" }}>
 				<svg
