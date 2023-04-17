@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 //paquetes para un slideshow fluido
 import { Zoom } from "react-slideshow-image";
@@ -6,16 +7,14 @@ import "react-slideshow-image/dist/styles.css";
 const Slideshow = () => {
 	//Array de Images
 	const images = [
-		"images/Image1.jpg",
-		"images/Image2.jpg",
-		"images/Image3.jpg",
-		"images/Image4.jpg",
-		"images/Image5.jpg",
-		//"images/Image6.jpg",
+		"img/Image6.jpg",
+		"img/test1.jpg",
+		"img/test2.jpg",
 	];
 
 	//Efectos para el zoom 
 	const zoomInProperties = {
+		indicators: true,
 		scale: 1.2,
 		duration: 5000,
 		transitionDuration: 500,
