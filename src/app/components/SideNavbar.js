@@ -2,18 +2,18 @@ import React from 'react';
 import { useState } from 'react';
 
 const menu = [
-    { name: "Inicio", href: "#", icon: "" },
-    { name: "Servicios", href: "#" },
-    { name: "Infantil", href: "#" },
-    { name: "¿Quienes somos?", href: "#" },
-    { name: "Contacto", href: "#" },
+    { name: "Inicio", href: "/", icon: "" },
+    { name: "Infantil", href: "/infantil" },
+    { name: "Servicios", href: "/servicios" },
+    { name: "About", href: "/about" },
+    { name: "Libros", href: "/libros" },
 ];
 
 function Menu() {
     return (
         <section className=''>
             <div className="p-4 hover:bg-green-300">
-                <img src="/img/logoTecnilibros.gif" alt="imagen logo" width={250} height={100} style={{ margin: "auto" }} />
+                <img className='rounded-full h-20 w-33 mr-2 ' src="/img/logoTecnilibros.gif" alt="imagen logo" width={250} height={100} style={{ margin: "auto" }} />
             </div>
             <div className="text-base text-center cursor-pointer font-bold text-green-400 border-b border-yellow-400 pb-4 w-full">
                 <h2>MENU PRINCIPAL</h2>
