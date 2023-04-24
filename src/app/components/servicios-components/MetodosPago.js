@@ -1,13 +1,15 @@
 import Image from 'next/image'
 
-import PaypalIcon from '../../../../public/img/paypal-icon.png'
-import VisaIcon from '../../../../public/img/visa-icon.png'
-import MasterCardIcon from '../../../../public/img/mastercard-icon.png'
+import PaypalIcon from '../../../../public/img/servicios/paypal-icon.png'
+import VisaIcon from '../../../../public/img/servicios/visa-icon.png'
+import MasterCardIcon from '../../../../public/img/servicios/mastercard-icon.png'
 
 const MetodosPago = () => {
   return (
     <div clas>
-      <h1 className='font-bold text-4xl text-center mt-5'>Metodos de Pago</h1>
+      <h1 className='font-bold text-4xl text-center mt-[5rem]'>
+        Metodos de Pago
+      </h1>
       <div className='md:my-20 grid md:grid-cols-3 justify-items-center align-middle '>
         <Image
           src={PaypalIcon}
