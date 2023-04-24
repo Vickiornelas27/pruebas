@@ -50,7 +50,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div class='flex items-center'></div>
+      <div className='flex items-center'></div>
     </nav>
   )
 }

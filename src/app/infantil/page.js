@@ -1,3 +1,4 @@
+'use client'
 import Slideinfa from "../components/Slideinfa"
 import Image from "next/image"
 import { Card, Grid, Text, Button, Row, Divider, Link } from '@nextui-org/react'

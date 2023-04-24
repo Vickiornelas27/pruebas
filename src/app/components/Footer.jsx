@@ -62,7 +62,7 @@ const rutas_redes = [
 const Footer = () => {
   return (
     <>
-      <Collapse.Group>
+      <Collapse.Group className=' bg-primary'>
         <Collapse title='EXPLORA'>
           <div className=' xl: w-1/6 p-3'>
             <nav>
@@ -151,7 +151,7 @@ const Footer = () => {
           </Text>
         </Collapse>
       </Collapse.Group>
-      <div className=' bg-[#90BE6D]p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
+      <div className='   bg-primary p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
         <div className=' xl: w-2/6 p-3'>
           <div className='text-center text-l'>
             <label>Siguenos en nuestra redes sociales</label>
