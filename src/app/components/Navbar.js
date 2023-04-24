@@ -19,24 +19,30 @@ const rutas = [
 
 const Navbar = () => {
   return (
-    <nav className='px-2  bg-primary'>
-      <div className='container flex flex-wrap items-center justify-center mx-auto'>
-        <img
-          className='rounded-full h-20 w-20 mr-2'
-          src='https://synergyloyalty.net/img/card/tecnilibros_image-717.png'
-          alt='Logo'
-        ></img>
-        <div className='hidden w-full md:block md:w-auto' id='navbar-dropdown'>
-          <ul className=' flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-verde-bg md:bg-verde-bg '>
-            {/* //Se manda a mapear el rutas */}
-            {rutas.map(({ ruta, label }) => (
-              <li className='text-white' key={ruta}>
-                <Link href={ruta}>{label}</Link>
-              </li>
-            ))}
-          </ul>
+    <nav className='flex items-center justify-between bg-[#F88633]  border-b  py-4 md:py-0 sticky top-0 z-50'>
+      <div className='flex items-center'>
+        <div className='mr-2 md:mr-4 lg:mr-6'>
+          <img
+            src='https://scontent.ftij2-1.fna.fbcdn.net/v/t1.18169-9/1441409_10152091536306639_2104613663_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=SD8aLRSM4-IAX-yXF32&_nc_ht=scontent.ftij2-1.fna&oh=00_AfBToqqUnQ_22IWDfLn7oXJ4yPU5UMcLTCDTk40HMCrIug&oe=6469AC46'
+            alt='Tecnilibros'
+            className='h-8 md:h-12 lg:h-16 rounded-full'
+          />
         </div>
       </div>
+      <div className='hidden md:flex items-center'>
+        <ul className='flex items-center'>
+          {/* //Se manda a mapear el rutas */}
+          {rutas.map(({ ruta, label }) => (
+            <li
+              className='text-black font-medium text-sm md:text-base lg:text-lg hover:text-gray-900 mr-4'
+              key={ruta}
+            >
+              <Link href={ruta}>{label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class='flex items-center'></div>
     </nav>
   )
 }

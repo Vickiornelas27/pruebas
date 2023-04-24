@@ -15,10 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={lora.className}>
-      <body>
-        <Navbar></Navbar>
+      <body className='bg-white'>
+        <Navbar />
         {children}
-
         <Footer />
       </body>
     </html>
