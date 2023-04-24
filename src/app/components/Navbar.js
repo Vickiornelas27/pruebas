@@ -18,6 +18,10 @@ const rutas = [
     {
         ruta: '/about',
         label: "About"
+    },
+    {
+        ruta: '/libros',
+        label: "Libros"
     }
     
     
