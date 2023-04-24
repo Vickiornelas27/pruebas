@@ -1,7 +1,10 @@
 'use client'
 
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { EffectCoverflow, Navigation, Pagination, Autoplay } from 'swiper'
+
+// Import Swiper styles
 import 'swiper/swiper.min.css'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';

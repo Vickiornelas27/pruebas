@@ -1,6 +1,6 @@
 import Slideinfa from "../components/Slideinfa"
 import Image from "next/image"
-import { Card, Grid, Text, Row, Link } from "@nextui-org/react"
+import { Card, Grid, Text, Button, Row, Divider, Link } from '@nextui-org/react'
 
 const Infantil = () => {
     return (
