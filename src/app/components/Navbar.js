@@ -8,7 +8,7 @@ const rutas = [
     label: 'Inicio'
   },
   {
-    ruta: '/about',
+    ruta: '/infantil',
     label: 'Infantil'
   },
   {
