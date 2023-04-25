@@ -51,8 +51,8 @@ const Servicios = () => {
   return (
     <>
       <h1 className='mt-[8rem]  font-bold text-7xl text-center '>Servicios</h1>
-      <div className='container mx-auto p-10'>
-        <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2'>
+      <div className='container mx-auto p-10 max-w-[90rem]'>
+        <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2'>
           {servicios.map(({ imagen, titulo, descripcion, key }) => (
             <CardServices
               imagen={imagen}

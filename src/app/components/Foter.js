@@ -73,7 +73,7 @@ const Footer = () => {
               <li key={key} className='text-center'>
                 <Link href={ruta}>
                   {' '}
-                  <img src={imagen} alt='imagen red social' />
+                  <Image src={imagen} alt='imagen red social' />
                 </Link>
               </li>
             ))}

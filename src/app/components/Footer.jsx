@@ -1,47 +1,48 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import React from 'react';
-import { Collapse, Text, Button } from '@nextui-org/react';
+import Link from 'next/link'
+import React from 'react'
+import { Collapse, Text, Button } from '@nextui-org/react'
+import Image from 'next/image'
 
 const rutas_explora = [
   {
     ruta: '/',
-    label: 'Inicio',
+    label: 'Inicio'
   },
   {
     ruta: '/',
-    label: 'Servicios',
+    label: 'Servicios'
   },
   {
     ruta: '/',
-    label: 'Infantil',
-  },
-];
+    label: 'Infantil'
+  }
+]
 const rutas_conocenos = [
   {
     ruta: '/',
-    label: '¿Quienes somos?',
-  },
-];
+    label: '¿Quienes somos?'
+  }
+]
 
 const rutas_redes = [
   {
     ruta: 'https://www.facebook.com/Tecnilibros/?locale=es_LA',
 
-    imagen: '../../img/facebook.png',
+    imagen: '/img/facebook.png'
   },
   {
     ruta: 'https://twitter.com/Tecnilibros',
 
-    imagen: '../../img/twitter.png',
+    imagen: '/img/twitter.png'
   },
   {
     ruta: 'https://www.instagram.com/tecnilibros/?hl=es',
 
-    imagen: '../../img/instagram.png',
-  },
-];
+    imagen: '/img/instagram.png'
+  }
+]
 // const rutas_direccion = [
 //   {
 //     ruta: 'https://maps.app.goo.gl/B46oXopwyZjttAph6?g_st=iw',
@@ -62,8 +63,8 @@ const rutas_redes = [
 const Footer = () => {
   return (
     <>
-      <Collapse.Group className=' bg-primary'>
-        <Collapse title='EXPLORA'>
+      <Collapse.Group className=' bg-primary '>
+        {/* <Collapse title='EXPLORA'>
           <div className=' xl: w-1/6 p-3'>
             <nav>
               <ul className='  text-l p-5 '>
@@ -77,7 +78,7 @@ const Footer = () => {
           </div>
         </Collapse>
         <Collapse title='CONOCENOS'>
-          <div className='xl: w-1/6 p-3'>
+          <div className='xl:w-1/6 p-3'>
             <nav>
               <ul className='  text-l p-5 '>
                 {rutas_conocenos.map(({ ruta, label }, key) => (
@@ -88,14 +89,15 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-        </Collapse>
+        </Collapse> */}
         <Collapse title='VISITANOS'>
-          <div className=' text-center xl: w-2/6 '>
+          <div className='text-center flex flex-row gap-10 justify-center '>
             <div>
               <h1>SUCURSAL RAMIREZ</h1>
               <h2>Bulevar Ramírez Méndez # 268 Fraccionamiento Bahía</h2>
 
               <Button
+                className='mx-auto'
                 auto
                 color='secondary'
                 rounded
@@ -114,6 +116,7 @@ const Footer = () => {
               <h1>SUCURSAL MATRIZ CENTRO</h1>
               <h2>Av.Ruiz # 488 Entre Juarez y Cuarta. Zona Centro</h2>
               <Button
+                className='mx-auto'
                 auto
                 color='secondary'
                 rounded
@@ -131,15 +134,17 @@ const Footer = () => {
           </div>
         </Collapse>
         <Collapse title='CONTACTO'>
-          <div>
-            <h1>SUCURSAL RAMIREZ</h1>
-            <h2>Tel (646) 152 12 69</h2>
-            <h2>sucursaltecnilibros@yahoo.com.mx</h2>
-          </div>
-          <div>
-            <h1>SUCURSAL MATRIZ CENTRO</h1>
-            <h2>Tel. (646) 178 1408</h2>
-            <h2>contacto@tecnilibros.com.mx</h2>
+          <div className='flex flex-row gap-10 justify-center  text-center   '>
+            <div>
+              <h1>SUCURSAL RAMIREZ</h1>
+              <h2>Tel. (646) 152 12 69</h2>
+              <h2>sucursaltecnilibros@yahoo.com.mx</h2>
+            </div>
+            <div>
+              <h1>SUCURSAL MATRIZ CENTRO</h1>
+              <h2>Tel. (646) 178 1408</h2>
+              <h2>contacto@tecnilibros.com.mx</h2>
+            </div>
           </div>
         </Collapse>
         <Collapse title='AVISO DE PRIVACIDAD'>
@@ -151,28 +156,28 @@ const Footer = () => {
           </Text>
         </Collapse>
       </Collapse.Group>
-      <div className='   bg-primary p-8   sm:columns-2  md:columns-3 xl:flex columns:4  '>
-        <div className=' xl: w-2/6 p-3'>
-          <div className='text-center text-l'>
-            <label>Siguenos en nuestra redes sociales</label>
+      <div className='   bg-primary p-8 '>
+        <div className=''>
+          <h2 className='font-bold text-xl text-center'>
+            Siguenos en nuestra redes sociales
+          </h2>
+          <div className='flex flex-row justify-between max-w-[18rem] mx-auto py-6'>
+            {rutas_redes.map(({ ruta, imagen }, key) => (
+              <Link key={key} href={ruta}>
+                <Image
+                  src={imagen}
+                  alt='Imagen red social'
+                  width={80}
+                  height={80}
+                />
+              </Link>
+            ))}
           </div>
-          <nav className='column columns-3'>
-            <ul className='  font-serif font-thin  text-l p-1 '>
-              {rutas_redes.map(({ ruta, imagen }, key) => (
-                <li key={key} className='text-center'>
-                  <Link href={ruta}>
-                    {' '}
-                    <img src={imagen} alt='' />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
-        <h3>2023 TECNILIBROS</h3>
+        <h2 className='font-bold text-lg text-center'>2023 TECNILIBROS</h2>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
