@@ -18,7 +18,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.2.1",
+    "slick-carousel": "^1.8.1",
     "swiper": "^9.2.3",
     "tailwindcss": "3.3.1",
     "zoom": "^0.0.2"

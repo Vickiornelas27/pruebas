@@ -4,37 +4,88 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Autoplay } from 'swiper'
 import { EffectCreative } from 'swiper'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-import ImageBanner1 from '../../../public/img/4.png'
-import ImageBanner2 from '../../../public/img/2.png'
-import ImageBanner3 from '../../../public/img/3.png'
+import Libro1 from '../../../public/libros/castillo.png'
+import Libro2 from '../../../public/libros/cumbres.png'
+import Libro3 from '../../../public/libros/harry-potter.png'
+import Libro4 from '../../../public/libros/ladrona.png'
+import Libro5 from '../../../public/libros/las-ventajas.png'
+import Libro6 from '../../../public/libros/principito.png'
 
 // Import Swiper styles
 import 'swiper/swiper.min.css'
 
 import Image from 'next/image'
+import { useState } from 'react'
 
-const Slider = () => {
+const SliderLibros = () => {
   SwiperCore.use([Autoplay])
+
+  const [slideIndex, setSlideIndex] = useState(0)
+
+  const libros = [Libro1, Libro2, Libro3, Libro4, Libro5, Libro6]
+
+  const setting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    swipe: false,
+    beforeChange: (current, next) => setSlideIndex(next)
+  }
   return (
-    <Swiper
-      allowTouchMove={false}
-      slidesPerView={1}
-      autoplay={{
-        delay: 2000
-      }}
-    >
-      <SwiperSlide>
-        <Image src={ImageBanner1} alt='Imagen1  Slider' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={ImageBanner2} alt='Imagen2 Slider' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={ImageBanner3} alt='Imagen3  Slider' />
-      </SwiperSlide>
-    </Swiper>
+    <div className='w-[80%] h-[60rem] my-[5rem] block p-10 mx-auto'>
+      <Slider {...setting}>
+        {libros.map((libro, index) => (
+          <div key={index}>
+            <Image
+              className={
+                index === slideIndex
+                  ? 'w-[100%] h-[40rem] rounded-md opacity-100 scale-[0.85] blur-[0]'
+                  : 'w-[100%] h-[40rem] rounded-md opacity-50 scale-[0.7] transition-[0.5s] blur-[5px]'
+              }
+              src={libro}
+              alt={`Libro Slider ${index}`}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+    // <Swiper
+    //   allowTouchMove={false}
+    //   slidesPerView={3}
+    //   autoplay={{
+    //     delay: 2000
+    //   }}
+    //   className='mt-10 mx-auto max-w-[30rem]'
+    // >
+    //   <SwiperSlide>
+    //     <Image src={Libro1} alt='Imagen1  Slider' />
+    //   </SwiperSlide>
+    //   <SwiperSlide>
+    //     <Image src={Libro2} alt='Imagen2 Slider' />
+    //   </SwiperSlide>
+    //   <SwiperSlide>
+    //     <Image src={Libro3} alt='Imagen3  Slider' />
+    //   </SwiperSlide>
+    //   <SwiperSlide>
+    //     <Image src={Libro4} alt='Imagen1  Slider' />
+    //   </SwiperSlide>
+    //   <SwiperSlide>
+    //     <Image src={Libro5} alt='Imagen1  Slider' />
+    //   </SwiperSlide>
+    //   <SwiperSlide>
+    //     <Image src={Libro6} alt='Imagen1  Slider' />
+    //   </SwiperSlide>
+    // </Swiper>
   )
 }
 
-export default Slider
+export default SliderLibros
