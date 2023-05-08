@@ -1,74 +1,123 @@
-'use client'
-import Slideinfa from "../components/Slideinfa"
+import React from "react"
 import Image from "next/image"
-import { Card, Grid, Text, Button, Row, Divider, Link } from '@nextui-org/react'
+import { Card, Grid, Text, Row } from "@nextui-org/react"
+import Modal1 from "../components/infantil-componentes/Modal1"
+import Modal2 from "../components/infantil-componentes/Modal2"
+import CardCuentos from "../components/infantil-componentes/CardCuentos"
+import CardFabulas from "../components/infantil-componentes/CardFabulas"
+import CardLatin from "../components/infantil-componentes/CardLatin"
+import Slideinfa from "../components/Slideinfa"
 
 const Infantil = () => {
     return (
         <div>
-            <Image
-                src="/img/fondo_estrellas.png"
-                alt="background image"
-                quality={100}
-                fill
-                sizes="100vw"
-                style={{
-                    objectFit: 'scale-down',
-                }} />,
-            <h3 className="text-5xl text-center font-bold mt-6">Infantil</h3>
-            <div className="mx-auto p-5">
-                <h2 className="font-bold text-2xl p-5 "> Tecnilibros Niños</h2>
-                <div className="grid md:my-20  md:grid-cols-1 xl:grid-rows-1 xm:grid-cols-1 xm:grid-rows-1 xs:grid-cols-1 xs:grid-rows-1 mb-5">
-                    <Grid.Container gap={2} justify="center" margin="15">
-                        <Grid sm={5} md={5} justify="center">
-                            <Card css={{ mw: "400px" }}>
+            <div >
+                <Image
+                    src="/img/pagina_niños/fondo_estrellas.png"
+                    alt="background image"
+                    quality={100}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: 'contain'
+                    }} />
+            </div>
+            <Text h3 size={42} align="center" weight="bold" css={{ textGradient: "45deg, $blue600 30%, $pink600 53%, $yellow600 20%", padding: "30px" }} > INFANTIL </Text>
+            <div className="mx-auto p-10 max-w-[90rem]" >
+                <Text align="center" size={32} weight="bold" css={{ textGradient: "90deg, $yellow600 47%, $blue600 51.8%, $pink600 29%", padding: "30px" }}>Tecnilibros Niños</Text>
+                <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 lg:grid-rows-1 xl:grid-cols-1 xl:grid-rows-1 xm:grid-rows-1 xs:grid-cols-1">
+                    <Grid.Container gap={2} justify="center" margin="10" padding="10px">
+                        <Grid sm={5} justify="center">
+                            <Card css={{
+                                w: "420px",
+                                bg: '$blue500'
+                                ,
+                                '@xs': {
+                                    bg: '$red500',
+                                    color: '$blue200',
+                                },
+                                '@sm': {
+                                    bg: '$blue600',
+                                    color: '$blue100',
+                                },
+                                '@md': {
+                                    bg: '$green600',
+                                    color: '$green100',
+                                },
+                                '@lg': {
+                                    bg: '$pink600'
+                                },
+                                '@xl': {
+                                    bg: '$yellow600'
+                                }
+                            }}>
                                 <Card.Header>
-                                    <img src="/img/img infa1.png" alt="imagen infa1" width={250} height={250} style={{ margin: "auto" }} ></img>
+                                    <Text size={26} color="white"> Comienza a leer aun mas! </Text>
                                 </Card.Header>
-                                <Card.Divider />
-                                <Card.Body>
-                                    <Text>
-                                        Inicia a tus hijos en el maravilloso hábito de la lectura . . . ¡ Nosotros te ayudamos !<br />
-                                        Contamos con un extenso surtido en material creado especialmente para ellos. Lo que asegura una experiencia ideal desde el primer momento.
-                                    </Text>
+                                <Card.Body css={{ py: "$10" }}>
+                                    <img src="/img/pagina_niños/niñolee.png" alt="imagen infa1" width="auto" height="auto" style={{ margin: "10px" }} ></img>
                                 </Card.Body>
-                                <Card.Divider />
-                                <Card.Footer>
-                                    <Row justify="flex-end">
-                                        <Link color="warning" href="#">Llevame Ahi!.</Link>
-                                    </Row>
-                                </Card.Footer>
-                            </Card>
-                        </Grid>
-                        <Grid sm={5} md={5} justify="center">
-                            <Card css={{ mw: "400px" }}>
-                                <Card.Header>
-                                    <img src="/img/img infa2.png" alt="imagen infa2" width={250} height={250} style={{ margin: "auto" }} ></img>
-                                </Card.Header>
-                                <Card.Divider />
-                                <Card.Body>
-                                    <Text >
-                                        Te invitamos a venir con tus hijos a Tecnilibros . . . <br />
-                                        puedes participar con él en la lectura, o bien, hacer uso de nuestra área de Café Internet,
-                                        por supuesto, tambien puedes búscar en nuestro extenso catálogo algún libro que sea de tu agrado.
-                                    </Text>
-                                </Card.Body>
-                                <Card.Divider />
-                                <Card.Footer>
-                                    <Row justify="flex-end">
-                                        <Link color="warning" href="#">Llevame Ahi!.</Link>
-                                    </Row>
-                                </Card.Footer>
-                            </Card>
-                        </Grid>
 
-                        <Card css={{ mw: "500px" }}>
-                            <Text className="font-bold text-center text-lg">LO MAS POPULAR </Text>
-                            <div>
-                                <Slideinfa />
-                            </div>
-                        </Card>
+                                <Card.Footer>
+                                    <Row justify="flex-end">
+                                        <Modal1 />
+                                    </Row>
+                                </Card.Footer>
+                            </Card>
+                        </Grid>
+                        <Grid sm={5} justify="center">
+                            <Card align="center" css={{
+                                w: "420px",
+                                bg: '$yellow600'
+                                ,
+                                '@xs': {
+                                    bg: '$blue500',
+                                    color: '$blue200',
+                                },
+                                '@sm': {
+                                    bg: '$yellow600',
+                                    color: '$yellow300',
+                                },
+                                '@md': {
+                                    bg: '$purple600',
+                                    color: '$purple100',
+                                },
+                                '@lg': {
+                                    bg: '$yellow600'
+                                },
+                                '@xl': {
+                                    bg: '$green700'
+                                }
+                            }}>
+                                <Card.Header >
+                                    <Text size={26} color="white" > !Ven y disfruta de nuestros servicios! </Text>
+                                </Card.Header>
+                                <Card.Body>
+                                    <img src="/img/pagina_niños/varias.png" alt="imagen infa2" width="auto" height="auto" style={{ margin: "10px" }} ></img>
+                                </Card.Body>
+
+                                <Card.Footer>
+                                    <Row justify="flex-end">
+                                        <Modal2 />
+                                    </Row>
+                                </Card.Footer>
+                            </Card>
+                        </Grid>
+                        <Grid.Container gap={2} justify="center" >
+                            <Grid>
+                                <CardCuentos />
+                            </Grid>
+                            <Grid>
+                                <CardFabulas />
+                            </Grid>
+                            <Grid>
+                                <CardLatin />
+                            </Grid>
+                        </Grid.Container>
                     </Grid.Container>
+                </div>
+                <div>
+                    <Slideinfa />
                 </div>
             </div>
         </div >
