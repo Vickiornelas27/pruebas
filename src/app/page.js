@@ -1,8 +1,9 @@
 import React from 'react'
 
-import Slideshow from './components/Slideshow'
 import ImageBanner from '../../public/banner/banner-books.jpg'
 import SliderLibros from './components/Slider'
+import './featuredproducts.css'
+import Slideshow from './components/Slideshow'
 const page = () => {
   return (
     <div>
@@ -19,7 +20,8 @@ const page = () => {
         </div>
       </div>
       <SliderLibros />
-      <Slideshow />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.css" />
+        <Slideshow/>
     </div>
   )
 }
