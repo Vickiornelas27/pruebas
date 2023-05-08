@@ -41,7 +41,7 @@ const SliderLibros = () => {
     beforeChange: (current, next) => setSlideIndex(next)
   }
   return (
-    <div className='w-[80%] h-[60rem] my-[5rem] block p-10 mx-auto'>
+    <div className='w-[80%] h-[60rem] my-[5rem] block p-10 pb-0 mx-auto'>
       <h1 className='text-5xl font-bold text-center uppercase'>
         Los libros mas vendidos
       </h1>
