@@ -1,66 +1,66 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import React from 'react';
-import { Collapse, Text, Button } from '@nextui-org/react';
-import Image from 'next/image';
+import Link from 'next/link'
+import React from 'react'
+import { Collapse, Text, Button } from '@nextui-org/react'
+import Image from 'next/image'
 
 const rutas_explora = [
   {
     ruta: '/',
-    label: 'Inicio',
+    label: 'Inicio'
   },
   {
     ruta: '/',
-    label: 'Servicios',
+    label: 'Servicios'
   },
   {
     ruta: '/',
-    label: 'Infantil',
-  },
-];
+    label: 'Infantil'
+  }
+]
 const rutas_conocenos = [
   {
     ruta: '/',
-    label: '¿Quienes somos?',
-  },
-];
+    label: '¿Quienes somos?'
+  }
+]
 const rutas_visitanos = [
   {
     ruta: '/contacto',
-    label: 'Sucursales',
-  },
-];
+    label: 'Sucursales'
+  }
+]
 const rutas_contactanos = [
   {
     ruta: '/contacto',
-    label: 'Contactanos',
-  },
-];
+    label: 'Contactanos'
+  }
+]
 const rutas_privacidad = [
   {
     ruta: '/',
-    label: 'Aviso de privacidad',
-  },
-];
+    label: 'Aviso de privacidad'
+  }
+]
 
 const rutas_redes = [
   {
     ruta: 'https://www.facebook.com/Tecnilibros/?locale=es_LA',
 
-    imagen: '/img/facebook.png',
+    imagen: '/img/facebook.png'
   },
   {
     ruta: 'https://twitter.com/Tecnilibros',
 
-    imagen: '/img/twitter.png',
+    imagen: '/img/twitter.png'
   },
   {
     ruta: 'https://www.instagram.com/tecnilibros/?hl=es',
 
-    imagen: '/img/instagram.png',
-  },
-];
+    imagen: '/img/instagram.png'
+  }
+]
 // const rutas_direccion = [
 //   {
 //     ruta: 'https://maps.app.goo.gl/B46oXopwyZjttAph6?g_st=iw',
@@ -82,7 +82,7 @@ const Footer = () => {
   return (
     <>
       <Collapse.Group className=' bg-primary '>
-        <Collapse title='EXPLORA'>
+        {/* <Collapse title='EXPLORA'>
           <div className=' xl: w-1/6 p-3'>
             <nav>
               <ul className='  text-l p-5 '>
@@ -105,7 +105,7 @@ const Footer = () => {
               ))}
             </ul>
           </nav>
-        </Collapse>
+        </Collapse> */}
         <Collapse title='VISITANOS'>
           <nav>
             <ul className='  text-l p-5 '>
@@ -161,7 +161,7 @@ const Footer = () => {
         <h2 className='font-bold text-lg text-center'>2023 TECNILIBROS</h2>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
