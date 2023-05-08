@@ -42,6 +42,9 @@ const SliderLibros = () => {
   }
   return (
     <div className='w-[80%] h-[60rem] my-[5rem] block p-10 mx-auto'>
+      <h1 className='text-5xl font-bold text-center uppercase'>
+        Los libros mas vendidos
+      </h1>
       <Slider {...setting}>
         {libros.map((libro, index) => (
           <div key={index}>
@@ -58,33 +61,6 @@ const SliderLibros = () => {
         ))}
       </Slider>
     </div>
-    // <Swiper
-    //   allowTouchMove={false}
-    //   slidesPerView={3}
-    //   autoplay={{
-    //     delay: 2000
-    //   }}
-    //   className='mt-10 mx-auto max-w-[30rem]'
-    // >
-    //   <SwiperSlide>
-    //     <Image src={Libro1} alt='Imagen1  Slider' />
-    //   </SwiperSlide>
-    //   <SwiperSlide>
-    //     <Image src={Libro2} alt='Imagen2 Slider' />
-    //   </SwiperSlide>
-    //   <SwiperSlide>
-    //     <Image src={Libro3} alt='Imagen3  Slider' />
-    //   </SwiperSlide>
-    //   <SwiperSlide>
-    //     <Image src={Libro4} alt='Imagen1  Slider' />
-    //   </SwiperSlide>
-    //   <SwiperSlide>
-    //     <Image src={Libro5} alt='Imagen1  Slider' />
-    //   </SwiperSlide>
-    //   <SwiperSlide>
-    //     <Image src={Libro6} alt='Imagen1  Slider' />
-    //   </SwiperSlide>
-    // </Swiper>
   )
 }
 
