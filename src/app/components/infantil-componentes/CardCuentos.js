@@ -31,10 +31,10 @@ const CardCuentos = () => {
       >
         <Card.Header>
           <img
-            alt='estrellas logo'
-            src='/img/pagina_niños/estrellas.jpg'
-            width='100px'
-            height='100px'
+            alt='cuentos-niños'
+            src='/img/pagina_niños/cuentosniños.jpg'
+            width='128px'
+            height='150px'
           />
           <Grid.Container css={{ pl: '$6' }}>
             <Grid xs={12}>
@@ -74,7 +74,7 @@ const CardCuentos = () => {
         >
           <Text color='white'>
             Aqui encontraras cuentos de distintos tipos para diferentes
-            situaciones!
+            situaciones!<br /> Entra y conocelos!
           </Text>
         </Card.Body>
         <Card.Divider color='primary' />

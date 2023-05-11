@@ -20,7 +20,8 @@ const Infantil = () => {
           fill
           sizes='100vw'
           style={{
-            objectFit: 'contain'
+            objectFit: 'contain',
+            zIndex: -1
           }}
         />
       </div>
@@ -50,11 +51,12 @@ const Infantil = () => {
           Tecnilibros Niños
         </Text>
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 lg:grid-rows-1 xl:grid-cols-1 xl:grid-rows-1 xm:grid-rows-1 xs:grid-cols-1'>
-          <Grid.Container gap={2} justify='center' margin='10' padding='10px'>
+          <Grid.Container gap={3} justify='center' margin='10' padding='10px'>
             <Grid sm={5} justify='center'>
               <Card
                 css={{
-                  w: '420px',
+                  w: '520px',
+                  h: 'fit-content',
                   bg: '$blue500',
                   '@xs': {
                     bg: '$red500',
@@ -82,7 +84,7 @@ const Infantil = () => {
                     Comienza a leer aun mas!{' '}
                   </Text>
                 </Card.Header>
-                <Card.Body css={{ py: '$10' }}>
+                <Card.Body css={{ py: '$20' }}>
                   <img
                     src='/img/pagina_niños/niñolee.png'
                     alt='imagen infa1'
@@ -103,7 +105,7 @@ const Infantil = () => {
               <Card
                 align='center'
                 css={{
-                  w: '420px',
+                  w: '520px',
                   bg: '$yellow600',
                   '@xs': {
                     bg: '$blue500',

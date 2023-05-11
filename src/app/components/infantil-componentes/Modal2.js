@@ -12,9 +12,9 @@ const Modal2 = () => {
     return (
         <div>
             <Button auto color="warning" shadow onPress={handler} > Vamos!</Button >
-            <Modal closeButton blur aria-labelledby="modal-niño" open={visible} onClose={closehandler} width="500px">
+            <Modal closeButton blur aria-labelledby="modal-niño" open={visible} onClose={closehandler} width="600px">
                 <Modal.Header>
-                    <img src="/img/13ani.jpg" alt="imagen ani" width={200} height={150} style={{ margin: "auto" }} />
+                    <img src="/img/pagina_niños/13ani.jpg" alt="imagen ani" width={200} height={150} style={{ margin: "auto" }} />
                     <Text size={23} css={{ textGradient: "180deg, $blue600 30%, $yellow600 80%" }}>!TE INVITAMOS!  </Text>
                 </Modal.Header>
                 <Modal.Body alt="lectura">

@@ -12,7 +12,7 @@ const Modal1 = () => {
     return (
         <div>
             <Button auto color="warning" shadow onPress={handler} > Vamos!</Button >
-            <Modal closeButton blur aria-labelledby="modal-niño" open={visible} onClose={closehandler} width="500px">
+            <Modal closeButton blur aria-labelledby="modal-niño" open={visible} onClose={closehandler} width="600px">
                 <Modal.Header>
                     <img src="/img/pagina_niños/niños_lect.jpg" alt="imagen niños" width={160} height={150} style={{ margin: "auto" }} />
                     <Text size={23} css={{ textGradient: "180deg, $blue600 40%, $pink600 40%, $yellow600 80%" }}>!INICIA a tus hijos en el maravilloso hábito de la lectura! . . . </Text>

@@ -29,8 +29,8 @@ const CardFabulas = () => {
       >
         <Card.Header>
           <img
-            alt='estrellas logo'
-            src='/img/pagina_niños/estrellas.jpg'
+            alt='niño-fabula'
+            src='/img/niño.png'
             width='100px'
             height='100px'
           />

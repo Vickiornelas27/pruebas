@@ -1,4 +1,4 @@
-import { Card } from "@nextui-org/react"
+import { Card, Grid, Row, Button, Text } from "@nextui-org/react"
 
 const CardLatin = () => {
     return (
@@ -29,9 +29,9 @@ const CardLatin = () => {
             }}>
                 <Card.Header>
                     <img
-                        alt="estrellas logo"
-                        src="/img/pagina_niños/estrellas.jpg"
-                        width="100px"
+                        alt="cuentos-latam"
+                        src="/img/pagina_niños/cuentoslatam.jpg"
+                        width="126px"
                         height="100px"
                     />
                     <Grid.Container css={{ pl: "$6" }}>

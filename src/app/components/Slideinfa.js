@@ -89,7 +89,7 @@ const Slideinfa = () => {
   }
 
   return (
-    <div className='w-[95%] h-[62rem] my-[5rem] block p-10'>
+    <div className='w-[92%] h-[48rem] my-[5rem] block p-5 pb-0 mx-auto'>
       <h1 className='text-5xl font-bold text-center uppercase'>
         Los libros mas populares!
       </h1>
@@ -99,8 +99,8 @@ const Slideinfa = () => {
             <Image
               className={
                 index === slideIndex
-                  ? 'w-[90%] h-[40rem] rounded-md opacity-90 scale-[0.85] blur-[0]'
-                  : 'w-[80%] h-[40rem] rounded-md opacity-40 scale-[0.7] transition-[0.5s] blur-[5px]'
+                  ? 'w-[100%] h-[40rem] rounded-md opacity-90 scale-[0.85] blur-[0]'
+                  : 'w-[100%] h-[40rem] rounded-md opacity-40 scale-[0.7] transition-[0.5s] blur-[5px]'
               }
               src={libro}
               alt={`Libro Slider ${index}`}
