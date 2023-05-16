@@ -11,7 +11,7 @@ Al mismo tiempo es importante que los usuarios puedan ver los libros mas relevan
 
 
 
-# Apartado de servicios
+# Pagina de servicios
 
 ![Pagina de Servicios](./imagenes-documentacion/PaginaServicios.png)
 
