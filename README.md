@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inicio
 
-## Getting Started
+Es importante que en la pesta principal tengamos una vista que nos llame la atención por eso se decidio colocar un banner que tuviera el lema de la institución y que los identificara, por esto mismo es que se coloca una imagen que va de acuerdo al tema de la pagina que este caso son los libros.
 
-First, run the development server:
+![Banner Pagina de Inicio](./imagenes-documentacion/BannerInicio.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Al mismo tiempo es importante que los usuarios puedan ver los libros mas relevantes por esto es que se decide colocar un "carousel" con los libros mas vendidos.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+![Banner Pagina de Inicio](./imagenes-documentacion/InicioCarousel.png)
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# Apartado de servicios
 
-To learn more about Next.js, take a look at the following resources:
+![Pagina de Servicios](./imagenes-documentacion/PaginaServicios.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Aquí podemos encontrar una cuadrícula de **"cards"** donde podremos ver de manera sencilla los diferentes servicios que la página ofrece. Cada card cuenta con un efecto de realce que nos permitirá saber en todo momento cual estamos viendo y nos permitirá tener saber la ubicación del mouse en nuestra pagina.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
