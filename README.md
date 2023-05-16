@@ -1,11 +1,11 @@
 # Inicio
 
-Es importante que en la pesta principal tengamos una vista que nos llame la atención por eso se decidio colocar un banner que tuviera el lema de la institución y que los identificara, por esto mismo es que se coloca una imagen que va de acuerdo al tema de la pagina que este caso son los libros.
+Es importante que en la pestaña principal tengamos una vista que nos llame la atención, por eso se decidió colocar un banner que tuviera el lema de la institución y que los identificara. Por esto mismo, se coloca una imagen que va de acuerdo al tema de la página, en este caso, son los libros.
 
 ![Banner Pagina de Inicio](./imagenes-documentacion/BannerInicio.png)
 
 
-Al mismo tiempo es importante que los usuarios puedan ver los libros mas relevantes por esto es que se decide colocar un "carousel" con los libros mas vendidos.
+Al mismo tiempo, es importante que los usuarios puedan ver los libros más relevantes. Por esto, se decide colocar un "carousel" con los libros más vendidos.
 
 ![Banner Pagina de Inicio](./imagenes-documentacion/InicioCarousel.png)
 
