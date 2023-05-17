@@ -1,12 +1,14 @@
 import { Card, Grid, Row, Button, Text } from '@nextui-org/react'
+import Image from 'next/image'
 
 const CardCuentos = () => {
   return (
-    <Card>
-      <Card
+    <Card isHoverable className='max-w-[450px] max-h-[450px]'>
+      <Card variant='bordered'
+        isPressable
         css={{
           p: '$6',
-          mw: '420px',
+          mw: 'auto',
           bg: '$blue500',
           mw: '400px',
           '@xs': {
@@ -33,6 +35,7 @@ const CardCuentos = () => {
           <img
             alt='cuentos-niños'
             src='/img/pagina_niños/cuentosniños.jpg'
+            loading='lazy'
             width='128px'
             height='150px'
           />
@@ -80,6 +83,14 @@ const CardCuentos = () => {
         <Card.Divider color='primary' />
         <Card.Footer justify='flex-end'>
           <Row justify='flex-end'>
+            <Image
+              src="/img/pagina_niños/estrella-imagen-animada-0149.gif"
+              quality={100}
+              css={{}}
+              height={100}
+              width={100}
+              alt="estrella"
+            />
             <Button size='xs, sm , m, lg, xl' color='white' hover>
               Seccion 1
             </Button>

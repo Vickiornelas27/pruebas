@@ -12,16 +12,16 @@ import Slideinfa from '../components/Slideinfa'
 const Infantil = () => {
   return (
     <div>
-      <div>
+      <div className='mx-auto sm:w-360 md:w-375 lg:w-768 xlg:w-1920 '>
         <Image
           src='/img/pagina_niños/fondo_estrellas.png'
           alt='background image'
-          quality={100}
           fill
-          sizes='100vw'
+          sizes='auto'
           style={{
             objectFit: 'contain',
-            zIndex: -1
+            zIndex: -1,
+            backgroundRepeat: 'repeat-y'
           }}
         />
       </div>
@@ -38,7 +38,7 @@ const Infantil = () => {
         {' '}
         INFANTIL{' '}
       </Text>
-      <div className='mx-auto p-10 max-w-[90rem]'>
+      <div className='mx-auto p-10 max-w-[100] sm:w-360 md:w-375 lg:w-768 xlg:w-1920'>
         <Text
           align='center'
           size={32}
@@ -150,20 +150,20 @@ const Infantil = () => {
                 </Card.Footer>
               </Card>
             </Grid>
-            <Grid.Container gap={2} justify='center'>
-              <Grid>
+            <Grid.Container gap={3} justify='center' alignItems='center'>
+              <Grid gap={4}>
                 <CardCuentos />
               </Grid>
-              <Grid>
+              <Grid gap={4}>
                 <CardFabulas />
               </Grid>
-              <Grid>
+              <Grid gap={4}>
                 <CardLatin />
               </Grid>
             </Grid.Container>
           </Grid.Container>
         </div>
-        <div>
+        <div className='mx-auto w-[100%]'>
           <Slideinfa />
         </div>
       </div>

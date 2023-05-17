@@ -22,6 +22,7 @@ import 'swiper/swiper.min.css'
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { red } from '@nextui-org/react'
 
 const Slideinfa = () => {
   SwiperCore.use([Autoplay])
@@ -43,7 +44,6 @@ const Slideinfa = () => {
   const setting = {
     dots: true,
     infinite: true,
-    responsiveClass: true,
     speed: 400,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -51,47 +51,13 @@ const Slideinfa = () => {
     autoplaySpeed: 2000,
     centerMode: true,
     swipe: false,
-    /*responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ],*/
     beforeChange: (current, next) => setSlideIndex(next)
   }
 
   return (
-    <div className='w-[92%] h-[48rem] my-[5rem] block p-5 pb-0 mx-auto'>
-      <h1 className='text-5xl font-bold text-center uppercase'>
-        Los libros mas populares!
+    <div className='w-[88%] h-[50rem] mt-10 mb-5 block p-5 mx-auto' style={{ justifyContent: "center" }}>
+      <h1 className='mx-auto w-[90%] text-4xl font-bold text-center uppercase' style={{ color: red }}>
+        !Los cuentos mas populares!
       </h1>
       <Slider {...setting}>
         {libros.map((libro, index) => (
@@ -99,8 +65,8 @@ const Slideinfa = () => {
             <Image
               className={
                 index === slideIndex
-                  ? 'w-[100%] h-[40rem] rounded-md opacity-90 scale-[0.85] blur-[0]'
-                  : 'w-[100%] h-[40rem] rounded-md opacity-40 scale-[0.7] transition-[0.5s] blur-[5px]'
+                  ? 'mx-auto my-auto w-[25rem] h-[12rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem] xl:h-[45rem] rounded-md opacity-100 scale-[1]  sm:scale-[0.9] blur-[0] '
+                  : 'mx-auto my-auto w-[25rem] h-[12rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem]  xl:h-[45rem] rounded-md opacity-50 scale-[0.7] transition-[0.5s] blur-[5px]'
               }
               src={libro}
               alt={`Libro Slider ${index}`}
