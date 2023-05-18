@@ -55,8 +55,8 @@ const Slideinfa = () => {
   }
 
   return (
-    <div className='w-[88%] h-[50rem] mt-10 mb-5 block p-5 mx-auto' style={{ justifyContent: "center" }}>
-      <h1 className='mx-auto w-[90%] text-4xl font-bold text-center uppercase' style={{ color: red }}>
+    <div className='w-[95%] h-[50rem] mt-5 mb-5 block p-2 mx-auto' style={{ justifyContent: "center" }}>
+      <h1 className='mx-auto w-[90%] text-3xl font-bold text-center uppercase' style={{ color: red }}>
         !Los cuentos mas populares!
       </h1>
       <Slider {...setting}>
@@ -65,8 +65,8 @@ const Slideinfa = () => {
             <Image
               className={
                 index === slideIndex
-                  ? 'mx-auto my-auto w-[25rem] h-[12rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem] xl:h-[45rem] rounded-md opacity-100 scale-[1]  sm:scale-[0.9] blur-[0] '
-                  : 'mx-auto my-auto w-[25rem] h-[12rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem]  xl:h-[45rem] rounded-md opacity-50 scale-[0.7] transition-[0.5s] blur-[5px]'
+                  ? 'mx-auto my-auto w-[25rem] h-[12rem] xs:w-[15rem] xs:h-[10rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem] xl:h-[45rem] rounded-md opacity-100 scale-[1]  sm:scale-[0.9] blur-[0] '
+                  : 'mx-auto my-auto w-[25rem] h-[12rem] xs:w-[15rem] xs:h-[10rem] sm:w-[20rem] sm:h-[18rem] md:w-[23rem]  md:h-[28rem] xl:w-[30rem]  xl:h-[45rem] rounded-md opacity-50 scale-[0.7] transition-[0.5s] blur-[5px]'
               }
               src={libro}
               alt={`Libro Slider ${index}`}

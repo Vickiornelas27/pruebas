@@ -10,8 +10,6 @@ const CardFabulas = () => {
           p: '$6',
           mw: '420px',
           bg: '$green600',
-          mw: '400px',
-
           '@xs': {
             bg: '$green600'
           },

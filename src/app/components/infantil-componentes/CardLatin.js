@@ -9,8 +9,7 @@ const CardLatin = () => {
                 css={{
                     p: "$6",
                     mw: "420px",
-                    bg: '$pink600'
-                    , mw: "400px",
+                    bg: '$pink600',
                     '@xs': {
                         bg: '$red500',
                         color: '$blue200',
@@ -35,13 +34,13 @@ const CardLatin = () => {
                         alt="cuentos-latam"
                         src="/img/pagina_niños/cuentoslatam.jpg"
                         loading='lazy'
-                        width="126px"
+                        width="100px"
                         height="100px"
                     />
                     <Grid.Container css={{ pl: "$6" }}>
                         <Grid xs={12}>
                             <Text size={20} h4 color="white" css={{ lineHeight: "$lg" }}>
-                                Cuentos LatinoAmericanos
+                                Cuentos Latino-Americanos
                             </Text>
                         </Grid>
                         <Grid xs={12}>

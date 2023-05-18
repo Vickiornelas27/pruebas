@@ -36,8 +36,8 @@ const CardCuentos = () => {
             alt='cuentos-niños'
             src='/img/pagina_niños/cuentosniños.jpg'
             loading='lazy'
-            width='128px'
-            height='150px'
+            width='115px'
+            height='120px'
           />
           <Grid.Container css={{ pl: '$6' }}>
             <Grid xs={12}>
