@@ -5,7 +5,7 @@ import React from 'react'
 import { Collapse, Text, Button } from '@nextui-org/react'
 import Image from 'next/image'
 
-const rutas_explora = [
+const rutasExplora = [
   {
     ruta: '/',
     label: 'Inicio'
@@ -17,34 +17,20 @@ const rutas_explora = [
   {
     ruta: '/',
     label: 'Infantil'
-  }
-]
-const rutas_conocenos = [
+  },
   {
     ruta: '/',
     label: '¿Quienes somos?'
   }
 ]
-const rutas_visitanos = [
+const rutasVisitanos = [
   {
     ruta: '/contacto',
     label: 'Sucursales'
   }
 ]
-const rutas_contactanos = [
-  {
-    ruta: '/contacto',
-    label: 'Contactanos'
-  }
-]
-const rutas_privacidad = [
-  {
-    ruta: '/',
-    label: 'Aviso de privacidad'
-  }
-]
 
-const rutas_redes = [
+const rutasRedes = [
   {
     ruta: 'https://www.facebook.com/Tecnilibros/?locale=es_LA',
 
@@ -61,104 +47,84 @@ const rutas_redes = [
     imagen: '/img/instagram.png'
   }
 ]
-// const rutas_direccion = [
-//   {
-//     ruta: 'https://maps.app.goo.gl/B46oXopwyZjttAph6?g_st=iw',
-//     nombre: 'SUCURSAL RAMIREZ',
-//     direccion: 'Bulevar Ramírez Méndez # 268 Fraccionamiento Bahía',
-//     telefono: 'Tel (646) 152 12 69',
-//     correo: 'sucursaltecnilibros@yahoo.com.mx',
-//   },
-//   {
-//     ruta: 'https://maps.app.goo.gl/H7QSBWx6kLsfn8jm7?g_st=iw',
-//     nombre: 'SUCURSAL MATRIZ CENTRO',
-//     direccion: 'Av.Ruiz # 488 Entre Juarez y Cuarta. Zona Centro',
-//     telefono: 'Tel. (646) 178 1408',
-//     correo: 'contacto@tecnilibros.com.mx',
-//   },
-// ];
+const rutasDireccion = [
+  {
+    ruta: 'https://maps.app.goo.gl/B46oXopwyZjttAph6?g_st=iw',
+    nombre: 'SUCURSAL RAMIREZ',
+    direccion: 'Bulevar Ramírez Méndez # 268 Fraccionamiento Bahía',
+    telefono: 'Tel (646) 152 12 69',
+    correo: 'sucursaltecnilibros@yahoo.com.mx'
+  },
+  {
+    ruta: 'https://maps.app.goo.gl/H7QSBWx6kLsfn8jm7?g_st=iw',
+    nombre: 'SUCURSAL MATRIZ CENTRO',
+    direccion: 'Av.Ruiz # 488 Entre Juarez y Cuarta. Zona Centro',
+    telefono: 'Tel. (646) 178 1408',
+    correo: 'contacto@tecnilibros.com.mx'
+  }
+]
 
 const Footer = () => {
   return (
     <>
-      <Collapse.Group className=' bg-primary '>
-        {/* <Collapse title='EXPLORA'>
-          <div className=' xl: w-1/6 p-3'>
-            <nav>
-              <ul className='  text-l p-5 '>
-                {rutas_explora.map(({ ruta, label }, key) => (
-                  <li key={key}>
-                    <Link href={ruta}>{label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </Collapse>
-        <Collapse title='CONOCENOS'>
-          <nav>
-            <ul className='  text-l p-5 '>
-              {rutas_conocenos.map(({ ruta, label }, key) => (
-                <li key={key}>
-                  <Link href={ruta}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </Collapse> */}
-        <Collapse title='VISITANOS'>
-          <nav>
-            <ul className='  text-l p-5 '>
-              {rutas_visitanos.map(({ ruta, label }, key) => (
-                <li key={key}>
-                  <Link href={ruta}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </Collapse>
-        <Collapse title='CONTACTO'>
-          <nav>
-            <ul className='  text-l p-5 '>
-              {rutas_contactanos.map(({ ruta, label }, key) => (
-                <li key={key}>
-                  <Link href={ruta}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </Collapse>
-        <Collapse title='AVISO DE PRIVACIDAD'>
-          <nav>
-            <ul className='  text-l p-5 '>
-              {rutas_privacidad.map(({ ruta, label }, key) => (
-                <li key={key}>
-                  <Link href={ruta}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </Collapse>
-      </Collapse.Group>
-      <div className='   bg-primary p-8 '>
-        <div className=''>
-          <h2 className='font-bold text-xl text-center'>
-            Siguenos en nuestra redes sociales
-          </h2>
-          <div className='flex flex-row justify-between max-w-[18rem] mx-auto py-6'>
-            {rutas_redes.map(({ ruta, imagen }, key) => (
-              <Link key={key} href={ruta}>
-                <Image
-                  src={imagen}
-                  alt='Imagen red social'
-                  width={80}
-                  height={80}
-                />
+      <div className='bg-primary py-4'>
+        <div className='grid grid-cols-3  w-[100%] mx-auto'>
+          {/* <div className=''>
+            <h1 className='font-bold text-3xl  text-white'>Explora</h1>
+            {rutasExplora.map(({ ruta, label }, key) => (
+              <Link className='block hover:text-white' key={key} href={ruta}>
+                {label}
               </Link>
             ))}
+          </div> */}
+
+          <div className='text-center w-[80%] mx-auto'>
+            <h1 className='text-3xl font-bold '>Visitanos</h1>
+            <div className='grid grid-cols-2 pt-2 text-xl'>
+              {rutasDireccion.map(({ ruta, nombre }, key) => (
+                <Link
+                  className='hover:text-white hover:font-bold '
+                  key={key}
+                  href={ruta}
+                >
+                  {nombre}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className=''>
+            <h2 className='font-bold text-3xl text-center'>
+              Siguenos en nuestra redes sociales
+            </h2>
+            <div className='flex flex-row justify-between max-w-[18rem] mx-auto py-6'>
+              {rutasRedes.map(({ ruta, imagen }, key) => (
+                <Link key={key} href={ruta}>
+                  <Image
+                    src={imagen}
+                    alt='Imagen red social'
+                    width={80}
+                    height={80}
+                  />
+                </Link>
+              ))}
+            </div>
+            <h2 className='font-bold text-lg text-center'>2023 TECNILIBROS</h2>
+          </div>
+
+          <div>
+            <h1 className='text-3xl font-bold text-center '>Contactanos</h1>
+            <div className='grid grid-cols-2 text-lg text-center mt-2'>
+              {rutasDireccion.map(({ nombre, telefono, correo }, key) => (
+                <div key={key}>
+                  <h1 className='font-bold'>{nombre}</h1>
+                  <p>{telefono}</p>
+                  <p>{correo}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <h2 className='font-bold text-lg text-center'>2023 TECNILIBROS</h2>
       </div>
     </>
   )
