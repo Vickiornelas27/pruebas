@@ -5,7 +5,7 @@ import { Card } from '@nextui-org/react'
 
 const CardServices = ({ imagen, titulo, descripcion }) => {
   return (
-    <Card isHoverable className='bg-white max-w-[450px] max-h-[450px]'>
+    <Card isHoverable className='max-w-[450px] bg-white max-h-[450px]'>
       <Card.Body>
         <h2 className='text-2xl font-bold my-2 text-center '>{titulo}</h2>
         <Image
