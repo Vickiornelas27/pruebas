@@ -31,8 +31,8 @@ const Libros = () => {
                   <img className="card-image" src={libro.imagen} alt={libro.titulo} />
                   <div className="card-details">
                     <h3>{libro.titulo}</h3>
-                    <p>{libro.autor}</p>
-                    <p>{libro.desc}</p>
+                    <h4>{libro.autor}</h4>
+                    <h4>{libro.desc}</h4>
                   </div>
                 </div>
               ))}
@@ -48,8 +48,8 @@ const Libros = () => {
               <img className="card-image" src={libro.imagen} alt={libro.titulo} />
               <div className="card-details">
                     <h3>{libro.titulo}</h3>
-                    <p>{libro.autor}</p>
-                    <p>{libro.desc}</p>
+                    <h4>{libro.autor}</h4>
+                    <h4>{libro.desc}</h4>
               </div>
             </div>
           ))}
@@ -65,8 +65,8 @@ const Libros = () => {
                   <img className="card-image" src={libro.imagen} alt={libro.titulo} />
                   <div className="card-details">
                         <h3>{libro.titulo}</h3>
-                        <p>{libro.autor}</p>
-                        <p>{libro.desc}</p>
+                        <h4>{libro.autor}</h4>
+                        <h4>{libro.desc}</h4>
                   </div>
                 </div>
               ))}
