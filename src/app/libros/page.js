@@ -32,6 +32,7 @@ const Libros = () => {
                   <div className="card-details">
                     <h3>{libro.titulo}</h3>
                     <p>{libro.autor}</p>
+                    <p>{libro.desc}</p>
                   </div>
                 </div>
               ))}
@@ -48,6 +49,7 @@ const Libros = () => {
               <div className="card-details">
                     <h3>{libro.titulo}</h3>
                     <p>{libro.autor}</p>
+                    <p>{libro.desc}</p>
               </div>
             </div>
           ))}
@@ -64,6 +66,7 @@ const Libros = () => {
                   <div className="card-details">
                         <h3>{libro.titulo}</h3>
                         <p>{libro.autor}</p>
+                        <p>{libro.desc}</p>
                   </div>
                 </div>
               ))}
@@ -120,13 +123,13 @@ const Libros = () => {
           }
         }
         .card-details {
+          justidfy-content: center;
           margin-top: auto;
           position: absolute;
           bottom: 0;
           padding: 10px;
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para los detalles de la tarjeta */
-          color: white; /* Color del texto para los detalles de la tarjeta */
+ /* Color del texto para los detalles de la tarjeta */
         }
         
         /* Tablets */
