@@ -12,16 +12,16 @@ Al mismo tiempo, es importante que los usuarios puedan ver los libros más relev
 
 ![Pie de Página](./imagenes-documentacion/footer.png)
 
-En esta sección se pueden acceder a otras páginas relevantes del sitio. Asi como dirigirnos a la redes sociales del mismo.
+En esta sección se pueden acceder a otras páginas relevantes del sitio como al centro de ayuda y los terminos legales. Así como dirigirnos a la redes sociales del mismo en la parte inferior derecha.
 
-# Pagina de servicios
+# Página de servicios
 
 ![Página de Servicios](./imagenes-documentacion/PaginaServicios.png)
 
 Aquí podemos encontrar una cuadrícula de **"cards"** donde podremos ver de manera sencilla los diferentes servicios que la página ofrece. Cada card cuenta con un efecto de realce que nos permitirá saber en todo momento cual estamos viendo y nos permitirá tener saber la ubicación del mouse en nuestra pagina.
 
-# Pagina de Contacto
+# Página de Contacto
 
 ![Página de Contacto](./imagenes-documentacion/sucursales.png)
 
-En esta página podemos encontarnos con la información de las sucursales del establecimeinto, los datos relevantes y una mapa de Google Maps que nos hace una previsualización de la ubicación, así como se puede seleccionar y dirigirnos a la aplicación de Google Maps para llegar a esta dirección.
+En esta página podemos encontrarnos con la información de las sucursales del establecimiento, los datos relevantes y un mapa de Google Maps que nos hace una previsualización de la ubicación, así como se puede seleccionar y dirigirnos a la aplicación de Google Maps para llegar a esta dirección.
