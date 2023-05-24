@@ -1,20 +1,24 @@
-'use client'
-import React from 'react'
-import { Text, Button, Divider } from '@nextui-org/react'
-import Iframe from 'react-iframe'
-import { BsTelephone } from 'react-icons/bs'
-import { HiOutlineMail } from 'react-icons/hi'
+'use client';
+import React from 'react';
+import { Text, Button, Divider } from '@nextui-org/react';
+import Iframe from 'react-iframe';
+import { BsTelephone } from 'react-icons/bs';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Page = () => {
   return (
     <>
       <div className='pt-2 px-3'>
         <div>
-          <h1 className='font-bold text-xl uppercase'>Sucursal Matriz centro</h1>
+          <h1 className='font-bold text-xl uppercase'>
+            Sucursal Ramírez Méndez
+          </h1>
           <Divider />
           <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  text-center p-5'>
             <div className='flex flex-col mt-5'>
-              <h2 className='font-semibold uppercase'>Informacion de contacto</h2>
+              <h2 className='font-semibold uppercase'>
+                Informacion de contacto
+              </h2>
               <div className='flex justify-center gap-2 my-2'>
                 <BsTelephone />
                 <h3>(646) 152 12 69</h3>
@@ -47,11 +51,15 @@ const Page = () => {
         </div>
 
         <div>
-          <h1 className='font-bold text-xl uppercase'>Sucursal Matriz centro</h1>
+          <h1 className='font-bold text-xl uppercase'>
+            Sucursal Matriz centro
+          </h1>
           <Divider />
           <div className='text-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center p-5'>
             <div className='mt-5 flex flex-col'>
-              <h2 className='font-semibold uppercase'>Informacion de contacto</h2>
+              <h2 className='font-semibold uppercase'>
+                Informacion de contacto
+              </h2>
               <div className='flex flex-row gap-5 justify-center my-2'>
                 <BsTelephone />
                 <h3>(646) 178 1408</h3>
@@ -67,7 +75,7 @@ const Page = () => {
               <h3>Lunes-Sabado 10:00-19:00</h3>
               <h3>Domingo CERRADO</h3>
             </div>
-            
+
             <div className='mx-auto px-5 '>
               <h2 className='font-semibold uppercase'>Ubicacion</h2>
               <iframe
@@ -84,7 +92,7 @@ const Page = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
