@@ -9,6 +9,18 @@ const rutas_contactanos = [
     label: 'Contactanos',
   },
 ];
+const rutas_terminos = [
+  {
+    ruta: '/terminos',
+    label: 'Terminos & Condiciones',
+  },
+];
+const rutas_privacidad = [
+  {
+    ruta: '/privacidad',
+    label: 'Política de Privacidad',
+  },
+];
 
 const Footer = () => {
   return (
@@ -52,15 +64,23 @@ const Footer = () => {
               </h2>
               <ul class='text-gray-500 dark:text-gray-400 font-medium'>
                 <li class='mb-4'>
-                  <a href='#' class='hover:underline'>
-                    Politica de Privacidad
-                  </a>
+                  <nav>
+                    {rutas_privacidad.map(({ ruta, label }, key) => (
+                      <li key={key}>
+                        <Link href={ruta}>{label}</Link>
+                      </li>
+                    ))}
+                  </nav>
                 </li>
 
                 <li class='mb-4'>
-                  <a href='#' class='hover:underline'>
-                    Terminos &amp; Condiciones
-                  </a>
+                  <nav>
+                    {rutas_terminos.map(({ ruta, label }, key) => (
+                      <li key={key}>
+                        <Link href={ruta}>{label}</Link>
+                      </li>
+                    ))}
+                  </nav>
                 </li>
               </ul>
             </div>
