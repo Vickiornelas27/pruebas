@@ -34,12 +34,12 @@ const CardLatin = () => {
                         alt="cuentos-latam"
                         src="/img/pagina_niños/cuentoslatam.jpg"
                         loading='lazy'
-                        width="100px"
-                        height="100px"
+                        width="70px"
+                        height="70px"
                     />
                     <Grid.Container css={{ pl: "$6" }}>
                         <Grid xs={12}>
-                            <Text size={20} h4 color="white" css={{ lineHeight: "$lg" }}>
+                            <Text size={20} h4 color="white" css={{ lineHeight: "auto" }}>
                                 Cuentos Latino-Americanos
                             </Text>
                         </Grid>
@@ -48,7 +48,7 @@ const CardLatin = () => {
                         </Grid>
                     </Grid.Container>
                 </Card.Header>
-                <Card.Body css={{ py: "$2", }}>
+                <Card.Body css={{ py: "$7", mw: '420px' }}>
                     <Text color="white">
                         Aqui aprenderemos sobre los cuentos cortos para niños sobre la cultura de LatinoAmerica
                     </Text>
@@ -64,9 +64,6 @@ const CardLatin = () => {
                             width={100}
                             alt="estrella"
                         />
-                        <Button size="xs, sm , m, lg, xl" color="white" hover>
-                            Seccion 3
-                        </Button>
                     </Row>
                 </Card.Footer>
             </Card>

@@ -4,10 +4,8 @@ import Image from 'next/image'
 import { Card, Grid, Text, Row } from '@nextui-org/react'
 import Modal1 from '../components/infantil-componentes/Modal1'
 import Modal2 from '../components/infantil-componentes/Modal2'
-import CardCuentos from '../components/infantil-componentes/CardCuentos'
-import CardFabulas from '../components/infantil-componentes/CardFabulas'
-import CardLatin from '../components/infantil-componentes/CardLatin'
 import Slideinfa from '../components/Slideinfa'
+import Secciones from '../components/infantil-componentes/Secciones'
 
 const Infantil = () => {
   return (
@@ -32,33 +30,32 @@ const Infantil = () => {
         weight='bold'
         css={{
           textGradient: '45deg, $blue600 30%, $pink600 53%, $yellow600 20%',
-          padding: '30px'
+          padding: '5px'
         }}
       >
         {' '}
         INFANTIL{' '}
       </Text>
-      <div className='mx-auto p-10 max-w-[100] sm:w-360 md:w-375 lg:w-768 xlg:w-1920'>
+      <div className='mx-auto p-5 max-w-[100] sm:w-360 md:w-375 lg:w-768 xlg:w-1920'>
         <Text
           align='center'
           size={32}
           weight='bold'
           css={{
             textGradient: '90deg, $yellow600 47%, $blue600 51.8%, $pink600 29%',
-            padding: '30px'
+            padding: '5px'
           }}
         >
           Tecnilibros Niños
         </Text>
 
-        <Grid.Container gap={3} justify='center' margin='10' padding='10px'>
+        <Grid.Container gap={3} justify='center' margin='10' padding='5px'>
           <Grid sm={12} md={5} justify='center'>
             <Card variant='bordered'
               isPressable
               css={{
                 w: 'auto',
                 mw: "520px",
-                h: 'fit-content',
                 bg: '$blue500',
                 '@xs': {
                   bg: '$red500',
@@ -80,21 +77,17 @@ const Infantil = () => {
                 }
               }}
             >
-              <Card.Header >
-                <Text size={24} color='white'>
-                  {' '}
-                  !Comienza a leer aun mas!{' '}
-                </Text>
-              </Card.Header>
-              <Card.Body css={{ py: '$20' }}>
-                <img
+              <Card.Body css={{ py: '$2' }}>
+                <h2 className='text-2xl font-bold my-2 text-center pb-10'>
+                  !Comienza a leer aun mas!
+                </h2>
+                <Card.Image
                   src='/img/pagina_niños/niñolee.png'
                   alt='imagen infa1'
                   loading='lazy'
                   width='auto'
                   height='auto'
-                  style={{ margin: '10px' }}
-                ></img>
+                  css={{ py: '$17' }} />
               </Card.Body>
 
               <Card.Footer>
@@ -111,7 +104,6 @@ const Infantil = () => {
               css={{
                 w: 'auto',
                 mw: "520px",
-                h: 'fit-content',
                 bg: '$yellow600',
                 '@xs': {
                   bg: '$blue500',
@@ -133,20 +125,17 @@ const Infantil = () => {
                 }
               }}
             >
-              <Card.Body css={{ py: '$13' }}>
-                <h2 className='text-2xl font-bold my-2 text-center '>
-                  !Ven y disfruta de nuestros servicios!
+              <Card.Body css={{ py: '$2' }}>
+                <h2 className='text-2xl font-bold my-2 text-center pb-10'>
+                  ¡Ven y disfruta de nuestros servicios!
                 </h2>
-                <img
+                <Card.Image
                   src='/img/pagina_niños/varias.png'
                   alt='imagen infa2'
                   loading='lazy'
                   width='auto'
-                  height='auto'
-                  style={{ margin: '15px', justifyItems: "center" }}
-                ></img>
+                  height='auto' />
               </Card.Body>
-
               <Card.Footer>
                 <Row justify='flex-end'>
                   <Modal2 />
@@ -154,17 +143,7 @@ const Infantil = () => {
               </Card.Footer>
             </Card>
           </Grid>
-          <Grid.Container gap={3} justify='center' alignItems='center'>
-            <Grid gap={4}>
-              <CardCuentos />
-            </Grid>
-            <Grid gap={4}>
-              <CardFabulas />
-            </Grid>
-            <Grid gap={4}>
-              <CardLatin />
-            </Grid>
-          </Grid.Container>
+          <Secciones />
         </Grid.Container>
       </div>
       <div className='mx-auto w-[100%]]'>

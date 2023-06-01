@@ -1,4 +1,4 @@
-import { Card, Grid, Row, Button, Text } from '@nextui-org/react'
+import { Card, Grid, Row, Text } from '@nextui-org/react'
 import Image from 'next/image'
 
 const CardFabulas = () => {
@@ -32,13 +32,13 @@ const CardFabulas = () => {
             alt='niño-fabulas'
             src='/img/niño.png'
             loading='lazy'
-            width='100px'
-            height='100px'
+            width='70px'
+            height='70px'
           />
           <Grid.Container css={{ pl: '$6' }}>
             <Grid xs={12}>
-              <Text size={20} h4 color='white' css={{ lineHeight: '$lg' }}>
-                Fabulas Para Niños
+              <Text size={20} h4 color='white' css={{ lineHeight: 'auto' }}>
+                Fabulas Infantiles
               </Text>
             </Grid>
             <Grid xs={12}>
@@ -46,7 +46,7 @@ const CardFabulas = () => {
             </Grid>
           </Grid.Container>
         </Card.Header>
-        <Card.Body css={{ py: '$2' }}>
+        <Card.Body css={{ py: '$2', mw: '420px' }}>
           <Text color='white'>
             Aqui aprenderas Fabulas infantiles que te ayudarte en el aprendizaje
             de los valores y comportamiento!
@@ -63,9 +63,6 @@ const CardFabulas = () => {
               width={100}
               alt="estrella"
             />
-            <Button size='xs, sm , m, lg, xl' color='white' hover>
-              Seccion 2
-            </Button>
           </Row>
         </Card.Footer>
       </Card>

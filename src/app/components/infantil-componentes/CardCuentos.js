@@ -1,4 +1,4 @@
-import { Card, Grid, Row, Button, Text } from '@nextui-org/react'
+import { Card, Grid, Row, Text } from '@nextui-org/react'
 import Image from 'next/image'
 
 const CardCuentos = () => {
@@ -8,9 +8,8 @@ const CardCuentos = () => {
         isPressable
         css={{
           p: '$6',
-          mw: 'auto',
+          mw: '420px',
           bg: '$blue500',
-          mw: '400px',
           '@xs': {
             bg: '$blue500',
             color: '$blue200'
@@ -36,13 +35,13 @@ const CardCuentos = () => {
             alt='cuentos-niños'
             src='/img/pagina_niños/cuentosniños.jpg'
             loading='lazy'
-            width='115px'
-            height='120px'
+            width='90px'
+            height='100px'
           />
           <Grid.Container css={{ pl: '$6' }}>
             <Grid xs={12}>
-              <Text size={20} h4 color='white' css={{ lineHeight: '$lg' }}>
-                Cuentos Para Niños
+              <Text size={20} h4 color='white' css={{ lineHeight: 'auto' }}>
+                Cuentos Infantiles
               </Text>
             </Grid>
             <Grid xs={12}>
@@ -53,26 +52,7 @@ const CardCuentos = () => {
         <Card.Body
           css={{
             py: '$2',
-            mw: '420px',
-            bg: '$blue500',
-            '@xs': {
-              bg: '$blue500',
-              color: '$blue200'
-            },
-            '@sm': {
-              bg: '$yellow600',
-              color: '$yellow300'
-            },
-            '@md': {
-              bg: '$purple600',
-              color: '$purple100'
-            },
-            '@lg': {
-              bg: '$yellow600'
-            },
-            '@xl': {
-              bg: '$green700'
-            }
+            mw: '420px'
           }}
         >
           <Text color='white'>
@@ -86,14 +66,15 @@ const CardCuentos = () => {
             <Image
               src="/img/pagina_niños/estrella-imagen-animada-0149.gif"
               quality={100}
-              css={{}}
+              css={{
+                '@xs': {
+                  width: '50px'
+                }
+              }}
               height={100}
               width={100}
               alt="estrella"
             />
-            <Button size='xs, sm , m, lg, xl' color='white' hover>
-              Seccion 1
-            </Button>
           </Row>
         </Card.Footer>
       </Card>

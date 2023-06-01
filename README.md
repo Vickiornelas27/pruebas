@@ -14,6 +14,28 @@ Al mismo tiempo, es importante que los usuarios puedan ver los libros más relev
 
 En esta sección se pueden acceder a otras páginas relevantes del sitio como al centro de ayuda y los terminos legales. Así como dirigirnos a la redes sociales del mismo en la parte inferior derecha.
 
+# Página de infantil
+
+![Página de Infatil](./imagenes-documentacion/Infantil.png)
+
+En esta pagina como se maneja un tema enfocado a los mas chicos, priorizamos que fuese llamativo siendo colorido! primeramente podemos encontrar una cuadrícula de dos **"cards"** principales coloridas donde se busca enfocar primeramente lo que se busca inculcar a las personas las cuales se puede visualizar con un **"modal"** llamativo respectivamente al seleccionar el boton
+
+![Página de Infatil](./imagenes-documentacion/Infantilmodal1.png)
+
+Modal del **"card"** izquierdo
+
+![Página de Infatil](./imagenes-documentacion/Infantilmodal2.png)
+
+Modal del **"card"** derecho
+
+![Página de Infatil](./imagenes-documentacion/InfantilSecciones.png)
+
+Al mismo tiempo, se encuentra un area de secciones tambien con **"cards"** coloridos y llamativo en la cual puede darse a conocer todas las secciones infantiles que se manejan
+
+![Página de Infatil](./imagenes-documentacion/InfantilCarousel.png)
+
+Asi mismo en la pagina, es importante dar a conocer a los usuarios que cuentos infantiles son los mas populares en el momento. Para esto se coloco un "carousel" con los libros infantiles mas populares.
+
 # Página de servicios
 
 ![Página de Servicios](./imagenes-documentacion/PaginaServicios.png)
